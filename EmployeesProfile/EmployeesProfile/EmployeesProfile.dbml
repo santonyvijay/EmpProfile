@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EmployeesProfile" Class="EmployeesProfileDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=&quot;D:\ITSE 1430\Projects\EmployeesProfile\EmployeesProfile.mdf&quot;;Integrated Security=True;Connect Timeout=30" SettingsObjectName="EmployeesProfile.Properties.Settings" SettingsPropertyName="EmployeesProfileConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MiddleName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SSN" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmployeeID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HiredDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SkillSet" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Branch" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
